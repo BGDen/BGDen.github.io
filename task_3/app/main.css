@@ -1,0 +1,18 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  user-select: none;
+  overflow: auto;
+  background: radial-gradient(rgba(243, 185, 59, 0.651), rgba(3, 168, 146, 0.295));
+}
+input{
+  margin-bottom: 20px;
+}
