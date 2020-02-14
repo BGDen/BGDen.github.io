@@ -1,0 +1,22 @@
+.info_card_watch >.main_info_card >.accessory_block >.main_info_accessory >.btn_buy >a.button_buy{
+  padding: .250em .7em;
+  font-size: 1em;
+  color: rgb(38, 121, 38);
+}
+.img_accessory{
+  cursor: pointer;
+}
+.brand_title_accessory{
+  margin-bottom: .2em;
+}
+.main_info_accessory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brand_price_accessory{
+  align-self: flex-end;
+  margin: 0 1em .3em 0;
+  font-weight: 700;
+}

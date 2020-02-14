@@ -1,0 +1,12 @@
+@import url('reset.css');
+@import url('./app/navbar/navbar.css');
+@import url('./app/card/card.css');
+@import url('./app/button/button.css');
+@import url('./app/overall_card/view_overall_card.css');
+@import url('./app/overall_card/info_overall_card.css');
+@import url('./app/overall_card/accessory_overall_card.css');
+@import url('./app/modal_card/modal_card.css');
+@import url('./app/modal_basket/modal_basket.css');
+@import url('./app/modal_basket/view_modal_basket.css');
+@import url('./app/pagination/pagination.css');
+@import url('./app/footer/footer.css');

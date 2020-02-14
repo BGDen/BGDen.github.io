@@ -1,0 +1,48 @@
+.main_info_card{
+  width: 32.5em;
+  display: flex;
+  margin-right: 2.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.brand_title{
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+.brand_price_model{
+  margin-bottom: .5em;
+  margin-left: 1em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.specification{
+  margin: .7em 0 1em 0;
+}
+.info_card_watch >.main_info_card >.btn_buy{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(180, 180, 180, 0.808) 100%);
+}
+.info_card_watch >.main_info_card >.btn_buy >.button_buy{
+  margin: 0 10px 0 0;
+  color: rgb(38, 121, 38);
+  font-size: larger;
+  padding: .6em 1.6em;
+}
+.info_card_watch >.main_info_card >.btn_buy >a.button_glass{
+  background-image:
+   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+   linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+   linear-gradient(to left, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to left, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to left, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+   linear-gradient(to left, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+}
+.title_sp{
+  margin-bottom: .3em; 
+  font-weight: 500;
+}

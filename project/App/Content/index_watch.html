@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>F-Shop</title>
+  <link rel="icon" type="image/png" href="../favicon/favicon.png">
+  <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+  <nav class="my_nav">
+    <ul class="my_nav_li">
+        <li><a href="../../index.html" class="first_ref button_glass"><img src="../img/TIME/logo/toolkit.png" width="50px" alt="logo_F-Shop"><span>F-Shop</span></a></li>
+    </ul>
+
+    <div class="purchase_block"><!--корзина-->
+      <a href="#" class="purchase_btn openModal button_glass">
+        <span class="img_icon"><span class="bought">0</span></span>
+      </a>
+    </div>
+
+    <div class="search_block"><!--поиск-->
+      <input type="search" results="5" autosave="some_unique_value" class="inp_text">
+      <a href="#" class="search button_glass">Search</a>
+    </div>
+    
+  </nav>
+
+  <main>
+
+  <div class="block_info_card"> 
+    <div class="info_card_watch">
+      <div class="view_card_watch">
+        <img src="../img/TIME/watch/Samsung/Samsung_Galaxy_Watch_46mm_Silver.jpeg" width="385px" height="385px" alt="Samsung_watch" class="img_card_watch">
+      </div>
+      <img src="../img/TIME/watch/Brand_logo/samsung_small.jpg" width="60px" height="50px" alt="Samsung_logo" class="img_brand_logo">
+      <div class="main_info_card">
+        <div class="brand_title">Смарт-часы Samsung Galaxy Watch 46мм Silver</div>
+        <div class="brand_price_model">9 499 грн</div>
+        <div class="btn_buy">
+          <a href="#" class="button_buy button_glass">Купить</a>
+        </div>
+        <div class="specification">
+          <p class="title_sp">Galaxy Watch</p>
+          <p>Оставайтесь в ритме современной мобильной жизни.
+          Объединяя ведущие смарт-технологии и уже привычный дизайн традиционных аналоговых часов,
+          Galaxy Watch стал еще более совершенен.<br> Будьте на связи с миром!</p>
+        </div>
+        <div class="accessory_block">
+          <div class="accessory_view_card">
+            <img src="../img/TIME/watch/Accessory/milanskiy-setchatyy-remeshok-dlya-chasov-fitbit-blaze-black.jpg" width="160px" height="160px" alt="milano_blaze" class="img_accessory">
+          </div>
+          <div class="main_info_accessory">
+            <div class="brand_title_accessory">Миланский сетчатый ремешок для часов Fitbit Blaze - Black</div>
+            <div class="brand_price_accessory">499 грн</div>
+            <div class="btn_buy">
+              <a href="#" class="button_buy button_glass">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <div class="main_modal">   <!----------------------------- START MODAL BASKET -->
+    <div class="modal">
+
+      <div class="main_title_basket">
+        <div class="top_title_basket">КОРЗИНА</div>
+        <div class="close_btn">
+          <a href="#" class="closeModal">&#x2716;</a>
+        </div>
+      </div>
+
+      <div class="basket_container">
+
+          <div class="basket_block">   <!------------------------ BASKET VIEW -->
+            <div class="view_basket">
+              <img src="../img/TIME/watch/Samsung/Samsung_Galaxy_Watch_46mm_Silver.jpeg" width="78px" height="78px" alt="Samsung" class="img_basket">
+            </div>
+            <div class="title_basket_info">
+              <div class="basket_info">Смарт-часы Samsung Galaxy Watch 46мм Silver</div>
+              <div class="basket_price">9 499 грн</div>
+            </div>
+            <div class="quantity_block">
+              <a href="#" class="minus">&minus;</a>
+              <span class="bought">0</span>
+              <a href="#" class="plus">&plus;</a>
+            </div>
+            <div class="price_block">
+              <div class="all_price">9 499 грн</div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="checkout_block"><!------------------------ CHECKOUT -->
+        <div class="all_price_list"> Всего:
+          <input type="text" class="inp_All">
+        </div>
+        <a href="#" class="checkout button_glass">Оформить заказ</a>
+      </div>
+    </div>
+  </div><!---------------------------------------- ----------- END MODAL BASKET -->
+
+
+  <footer>
+    <p class="copyright">© 2020 F-Shop Copyright</p>
+  </footer>
+
+<!-- <script src="../JavaScript/main.js" type="module"></script> -->
+<!-- <script src="../JavaScript/Modal.js"></script> -->
+</body>
+</html>

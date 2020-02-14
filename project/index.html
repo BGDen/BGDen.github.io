@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>F-Shop</title>
+  <link rel="icon" type="image/png" href="./App/favicon/favicon.png">
+  <link rel="stylesheet" href="App/CSS/main.css">
+  <!-- <script src="./App/JavaScript/Pagination.js"></script> -->
+</head>
+
+<body>
+
+    <container id='cont_nav'>
+      <nav class="my_nav">
+        <ul class="my_nav_li">
+            <li><a href="./index.html" class="first_ref button_glass"><img src="App/img/TIME/logo/toolkit.png" width="50px" alt="logo_F-Shop"><span>F-Shop</span></a></li>
+          </ul>
+          <!--корзина-->
+        <!-- <div class="purchase_block">
+          <a href="#" class="purchase_btn openModal button_glass">
+            <span class="img_icon"><span class="bought">0</span></span>
+          </a>
+        </div> -->
+        <div class="search_block"><!--поиск-->
+          <input type="search" results="5" autosave="some_unique_value" class="inp_text inp-search">
+          <a href="#" class="search button_glass btn-search">Search</a>
+        </div>
+      </nav>
+    </container>
+  
+    <container id='cont_main'>
+        <div id="products"></div>
+    </container>
+
+    <container class="All_info_card">
+      <div class="big_info_card"></div>
+    </container>
+  
+    <container class="cont_basket">
+      <div class="main_modal">   <!----------------------------- START MODAL BASKET -->
+        <div class="modal">
+          <div class="main_title_basket">
+            <div class="top_title_basket">КОРЗИНА</div>
+            <div class="close_btn">
+              <a href="#" class="closeModal">&#x2716;</a>
+            </div>
+          </div>
+          <div class="basket_container">
+              <div class="basket_block">   <!------------------------ BASKET VIEW -->
+                <div class="view_basket">
+                  <img src="./App/img/TIME/watch/Samsung/Samsung_Galaxy_Watch_46mm_Silver.jpeg" width="78px" height="78px" alt="Samsung" class="img_basket">
+                </div>
+                <div class="title_basket_info">
+                  <div class="basket_info">Смарт-часы Samsung Galaxy Watch 46мм Silver</div>
+                  <div class="basket_price">9 499 грн</div>
+                </div>
+                <div class="quantity_block">
+                  <a href="#" class="minus">&minus;</a>
+                  <span class="bought">0</span>
+                  <a href="#" class="plus">&plus;</a>
+                </div>
+                <div class="price_block">
+                  <div class="all_price">9 499 грн</div>
+                </div>
+              </div>
+          </div>
+          <div class="checkout_block"><!------------------------ CHECKOUT -->
+            <div class="all_price_list"> Всего:
+              <input type="text" class="inp_All">
+            </div>
+            <a href="#" class="checkout button_glass">Оформить заказ</a>
+          </div>
+        </div>
+      </div><!---------------------------------------- ----------- END MODAL BASKET -->
+    </container>
+  
+  
+    <!---------------------------------- START PAGINATION -->
+    <!-- <container class="cont_pag">
+      <div class="counter"></div>
+      <button class="paginate left btn-transp"><i></i><i></i></button>
+      <button class="paginate right btn-transp"><i></i><i></i></button>
+    </container> -->
+  
+    
+    <footer class="foot">
+      <p class="copyright">© 2020 F-Shop Copyright</p>
+    </footer>
+  
+  <script src="./App/JavaScript/main.js" type="module"></script>
+  
+</body>
+</html>
