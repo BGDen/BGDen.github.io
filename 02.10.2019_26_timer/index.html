@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>35 (Timer)</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="app/style/main.css">
+</head>
+<body>
+    
+    <div action="" class="main">
+      <div class="top">
+        <aside class="blc_left">
+            <input type="text" name="time" id="timer" value="00:00:0">
+            <div class="top_btn">
+              <button class="btn left" id="start">START</button>
+              <button class="btn right" id="stop">STOP</button>
+            </div>
+            <div class="bottom_btn">
+              <button class="btn left" id="circle">CIRCLE</button>
+              <button class="btn right" id="pause">PAUSE</button>
+            </div>
+        </aside>
+        <aside class="blc_right">
+            <div class="title">&dArr; Circle</div>
+        </aside>
+      </div>
+      <div class="text">
+          <p>START + click &rArr; таймер стартует. Повторный клик при работающем таймере ничего не сделает</p>
+          <p>STOP + click &rArr; Устанавливает время в "00:00:0" и очищает список "Circle"</p>
+          <p>CIRCLE + click &rArr; Выводит в список "Circle" текущее значение времени в формате mm : ss : ms</p>
+          <p>PAUSE + click &rArr; останавливает работу таймера. Повторный клик при останавленном таймере ничего не сделает</p>
+      </div>
+    </div>
+
+
+    <script src="app/script/main.js"></script>
+</body>
+</html>

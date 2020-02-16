@@ -1,0 +1,94 @@
+
+body, .main, .top, .blc_left, .blc_right, .top_btn, .bottom_btn, .text{
+  display: flex;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+}
+.main{
+  background: white;
+}
+body, .main{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  width: 590px;
+  padding: 2em;
+}
+.top{
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blc_left{
+  width: 50%;
+  margin-right: 2.2em;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+input{
+  width: 11em;
+  text-align: center;
+  font-size: 1.7em;
+  margin: 0 0 .5em 0;
+  border: 2px solid black;
+}
+.top_btn, .bottom_btn{
+  width: 100%;
+  padding: .2em;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.btn{
+  width: 7em;
+  padding: .3em 0;
+  margin: .3em 0;
+  border-radius: .3em;
+  outline: none;
+}
+.top_btn >.left,
+.bottom_btn >.left{
+  margin-left: .5em;
+  margin-right: 2.5em;
+}
+.blc_right{
+  width: 10em;
+  height: 12em;
+  flex-direction: column;
+  padding: 0 .1em 0 0; 
+  overflow-y: scroll;
+}
+.title{
+  font-size: 22px;
+  width: 100%;
+  line-height: 2em;
+  font-weight: 700;
+  text-align: center;
+  background-color: lightgray;
+  border: 1px solid black;
+  position: sticky;
+  top: 0px;
+}
+.circle{
+  border: 1px solid black;
+  line-height: 26px;
+  margin-top: 2px;
+  text-align: center;
+}
+.text{
+  margin-top: 1.3em;
+  padding: .3em;
+  flex-direction: column;
+  border: 1px solid rgb(177, 177, 177);
+}
+.text >p{
+  margin: .3em 0;
+  padding: .2em;
+  background: rgb(235, 235, 235);
+}
