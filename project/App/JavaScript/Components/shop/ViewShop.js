@@ -1,5 +1,5 @@
 export class ViewShop {
-  constructor (getFullCard, searchFunc, handleCloseModal){
+  constructor (getFullCard, searchFunc, handleCloseModal, handleClickPaginator){
 
     this.shopDomElements = {
       contProd: document.querySelector('#products'),
@@ -15,7 +15,9 @@ export class ViewShop {
     this.btnSearch = document.querySelector('.btn-search');
     this.btnSearch.addEventListener('click', searchFunc);
 
-  } 
+    this.pagination = document.querySelector('.pagination');
+    this.handleClickPaginator = handleClickPaginator;
+} 
   
   render(data){
     this.shopDomElements.contProd.innerHTML = '';
@@ -24,7 +26,7 @@ export class ViewShop {
       <div class="catalog_card amazfit_card" id="${id}">
         <div class="card_view">
           <a href="#" class="open_modal_overall_card">
-            <img src="${img}" width="240px" height="240px" alt="img">
+            <img src="${img}" width="240px" height="240px" alt="${name}">
           </a>
         </div>
         <div class="card_info">
@@ -38,7 +40,7 @@ export class ViewShop {
       `;
 
       document.querySelectorAll('.catalog_card').forEach((card) => card.addEventListener('click', this.getFullCard));
-
+      
     });
   }
 
@@ -61,9 +63,9 @@ export class ViewShop {
         <div class="block_info_card" id="full-${id}"> 
           <div class="info_card_watch">
             <div class="view_card_watch">
-              <img src="${img}" width="365px" height="365px" alt="Samsung_watch" class="img_card_watch">
+              <img src="${img}" width="365px" height="365px" alt="${brand}" class="img_card_watch">
             </div>
-            <img src="${logo}" width="60px" height="50px" alt="Samsung_logo" class="img_brand_logo">
+            <img src="${logo}" width="60px" height="50px" alt="${brand}" class="img_brand_logo">
             <div class="main_info_card">
               <div class="brand_title">${name}</div>
               <div class="brand_price_model">${price}</div>
@@ -98,5 +100,23 @@ export class ViewShop {
     closeModalCard(){
        this.shopDomElements.bigInfoCard.style.display = 'none';
     }
+
+  /////////////////////////////////////////////////////////////////////////////////////////
+
+  getLink(){
+    return this.shopDomElements.contProd;
+  }
+
+  renderPagination(len, num){
+    console.log(len,num);
+    this.pagination.removeEventListener('click', this.handleClickPaginator);
+    
+    this.pagination.innerHTML = `
+      <li class="page-item"><a class="page-link button_glass" href="#">${num - 1}</a></li>
+      <li class="page-item"><a class="page-link button_glass" href="#">${num}</a></li>
+      <li class="page-item"><a class="page-link button_glass" href="#">${num + 1}</a></li>`;
+
+    this.pagination.addEventListener('click', this.handleClickPaginator);
+  }
 
 } 
