@@ -1,0 +1,53 @@
+body, .mainBlock, .allBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.mainBlock{
+  width: 35em;
+}
+.area{
+  width: 100%;
+  height: 7em;
+  padding: 0 .3em;
+  font-size: 1.7em;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.allBtn{
+  width: 100%;
+  padding: .4em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container{
+  width: 100%;
+  height: 7em;
+  padding: .3em;
+  font-size: 1.7em;
+  overflow: auto;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(128, 5, 5), 0 0 0.2em rgb(255, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+button{
+  padding: .5em;
+  border-radius: .5em;
+  outline:none;
+  color: white;
+}
+button:nth-of-type(1){
+  background: rgb(37, 107, 49);
+}
+button:nth-of-type(2){
+  background: rgb(107, 37, 37);
+}

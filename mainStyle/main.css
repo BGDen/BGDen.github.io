@@ -38,6 +38,7 @@ body {
   color: black;
 }
 .first{
+  margin: .5em;
   box-shadow: -7px 5px 3px 2px rgba(0,0,0,0.75);
 }
 .second, .third{
