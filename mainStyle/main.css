@@ -31,13 +31,13 @@ body {
   box-sizing: border-box;
   width: 120px;
   height: 50px;
-  padding: 3px;
   border-radius: 50%;
   outline: none;
   background: radial-gradient(circle, rgba(63,240,251,1) 0%, rgba(255,95,128,1) 100%);
 }
 .btn > a{
   color: black;
+  padding: 3px;
 }
 .first{
   margin: .5em;
