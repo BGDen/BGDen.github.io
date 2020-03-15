@@ -1,0 +1,52 @@
+body, .block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(187, 187, 187);
+}
+.block{
+  width: 60em;
+  height: 30em;
+  justify-content: space-between;
+  background: radial-gradient(circle, rgba(234,249,244,1) 0%, rgba(255,255,255,1) 81%);
+  box-sizing: border-box;
+  overflow: auto;
+}
+table{
+  width: 97%;
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+th{
+  cursor: help;
+}
+th, td{
+  border: 1px solid;
+  padding: 5px;
+  text-align: center; 
+}
+.add_user{
+  position: sticky;
+  padding: .3em;
+  font-weight: 700;
+  font-size: 1em;
+  bottom: .7em;
+  z-index: 2;
+  cursor: cell;
+}
+.btn_delete{
+  color: red;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: inherit;
+  align-self: baseline;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1em;
+}
