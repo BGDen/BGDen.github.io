@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="message_board">
+    <ol class="list"></ol>
+  </div>
+
+  <form id="form" class="send_message">
+
+      <p>Name</p>
+      <input  class="name" type="text" name="name">
+      <p>Message text</p>
+      <textarea class="text_msg" name="text"></textarea>
+
+      <div class="bottom_block">
+        <div class="left">
+            <span>Color text</span>
+            <select class="color_text" name="color" size="1">
+                <option selected value="#000000">Black</option>
+                <option value="#FF0000">Red</option>
+                <option value="#008000">Green</option>
+                <option value="#0000FF">Blue</option>
+                <option value="#FFFF00">Yellow</option>
+                <option value="#808080">Gray</option>
+            </select>
+        </div>
+        <button class="btnSend" type="submit">Send</button>
+      </div>
+
+  </form>
+
+  <script src="script/main.js" type="module"></script> 
+</body>
+</html>

@@ -1,0 +1,78 @@
+body, .bottom_block, .left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  flex-direction: column;
+  background: rgba(50, 26, 138, 0.397);
+}
+.message_board{
+  width: 75em;
+  height: 20em;
+  overflow-y: scroll;
+  border: 1px solid black;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,218,153,1) 100%);
+}
+
+.list{
+  margin: 20px;
+  padding: 0px;
+}
+
+.list li{
+  list-style-type: none;
+}
+.list span{
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.list h4{
+  background-color: rgb(199, 199, 199);
+  display: inline;
+  padding: 5px; 
+}
+.bottom_block{
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: .7em;
+}
+.left{
+  flex-direction: row;
+  align-items: flex-start;
+}
+.left >span{
+  margin: 0 .3em 0 .4em;
+}
+.send_message{
+  display: block;
+  width: 30em;
+  height: 15em;
+  margin-top: .5em;
+  background-color: rgb(255, 245, 233);
+  border: 1px solid rgb(255, 220, 179);
+  padding: 0px;
+}
+
+.send_message p{
+  margin: 5px 0 0 10px;
+}
+.name{
+  margin: 5px 0 0 10px;
+  width: 200px;
+}
+
+.text_msg{
+  resize: none;
+  width: 30em;
+  height: 100px;
+  margin: 5px 0 0 10px;
+  overflow-y: scroll;
+}
+
+.btnSend{
+  width: 100px;
+  float: right;
+  margin-right: 10px;
+}
