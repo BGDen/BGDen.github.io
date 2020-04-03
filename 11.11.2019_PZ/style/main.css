@@ -1,0 +1,69 @@
+body{
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(93,93,93,1) 44%, rgb(211, 211, 211) 90%);
+}
+
+h1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1, h2{
+  width: 22em;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(255, 251, 0);
+  text-shadow: 2px -2px 5px rgb(68, 54, 57);
+}
+
+.title, .main{
+  display: flex;
+  flex-direction: center;
+  flex-wrap: nowrap;
+  /* width: 860px; */
+  margin: 1.5em auto;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.error{
+  position: relative;
+  width: 15em;
+  padding: .5em;
+  color: red;
+  font-size: 2em;
+  background: rgba(151, 151, 151, 0.404);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.jsonString, .jsonParse{
+  width: 30em;
+  height: 600px;
+  resize: none;
+  padding: 10px;
+  font-size: 1.2em;
+  background: linear-gradient(0deg, rgba(166, 166, 166, 0.151) 0%, rgba(93,93,93,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.jsonString{
+  color: rgb(153, 255, 153);
+}
+
+.jsonParse{
+  color: rgb(231, 153, 255);
+}
+
+.btn{
+  width: 1.5em;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 5em;
+  margin: 0px 10px;
+}
