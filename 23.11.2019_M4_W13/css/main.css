@@ -1,0 +1,160 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.task1{
+  width: 500px;
+  height: 100px;
+  margin-left: 12px;
+}
+
+.line{
+  position: relative;
+  top: 40px;
+  z-index: 0;
+  width: 500px;
+  height: 10px;
+  background-color: #D7D7D7;
+}
+
+.blc{
+  position: relative;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #2699FF;
+  top: 25px;
+  cursor: pointer;
+}
+
+.container-slider{
+  width: 500px;
+  margin-left: 12px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background-color: #D7D7D7;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: rgb(30, 148, 30);
+  cursor: pointer;
+}
+
+/* Task 2 //////////////////////////////////////////////*/
+.task2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 2em 0;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+.pic{
+  width: 325px;
+  height: 325px;
+  margin: 0px 80px 0px 80px;
+  background-image: url('../img/HTML.png');
+}
+
+.left, .right{
+  font-size: 48px;
+  color: lightslategrey;
+}
+
+.right{
+  margin-right: .5em;
+}
+
+.left{
+  opacity: 0.3;
+}
+
+/* Task 3 //////////////////////////////////////////////////*/
+.task3{
+  display: block;
+  width: 700px;
+  margin: 50px 0 0 12px;
+}
+
+.title{
+  background-color: #518CBB;
+  margin: 0;
+  color: white;
+  line-height: 32px;
+  border: 1px solid black;
+}
+
+.text{
+  margin: 0;
+  background-color: #B5DCE9;
+}
+
+.none{
+  display: none;
+}
+
+/* Task 4 ///////////////////////////////////////////////////////*/
+.block_fo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3em 0;
+  margin: 3em 0;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+.task4{
+  width: 700px;
+  height: 200px;
+  margin-right: 1em;
+  border: 1px solid black;
+  overflow-y: scroll;
+  padding: 10px;
+  white-space: normal;
+}
+
+/* Task 5 /////////////////////////////////////////////////////////*/
+.task5{
+  margin: 50px 0px 0px 12px;
+  width: 400px;
+  height: 300px;
+}
+
+.input_date{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+label{flex-basis: 32%;}
+
+.btnGen{
+  flex-basis: 90%;
+  margin-top: 10px;
+}
+
+input{width: 60px;}
+
+.output_date{
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+td, th{
+  border: 1px solid black;
+  width: 45px;
+  height: 25px;
+  text-align: center;
+}

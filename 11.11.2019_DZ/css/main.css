@@ -1,0 +1,158 @@
+body{
+  background-color: rgb(233, 250, 251);
+  min-width: 1200px;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.search{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:    
+          "label_title title"
+          "label_type type"
+          "btnSearch btnSearch";
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+  margin: 50px auto;
+  background: #FBF2E9;
+}
+
+.label_title{grid-area: label_title;}
+.label_type{grid-area: label_type;}
+.btnSearch{grid-area: btnSearch;}
+#title{grid-area: title;}
+#type{grid-area: type;}
+
+.btnSearch, #title, #type, label{font-size: 14pt;}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1200px;
+  height: 320px;
+}
+
+.card{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 155px 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  grid-template-areas:    
+          "poster typeTitle"
+          "poster movie_name"
+          "poster date"
+          "poster btnDetails";
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 330px;
+  min-height: 230px;
+  background: #FBF2E9;
+
+}
+
+.poster_small{
+  grid-area: poster;
+  height: 200px;
+  width: 145px;
+  margin-right: 10px;
+}
+
+.typeTitle{
+  grid-area: typeTitle;
+  font-size: 14pt;
+}
+
+.movie_name{
+  grid-area: movie_name;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.date{
+  grid-area: date;
+  font-size: 14pt;
+}
+
+.btnDetails{
+  grid-area: btnDetails;
+  font-size: 15pt;
+}
+
+/* Pagination //////////////////////////////////////////////*/
+.pagination{
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 10px auto;
+}
+
+.num{
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12pt;
+  margin: 5px;
+}
+
+.empty{
+  user-select: none;
+  margin: 5px;
+}
+
+.active{
+  background-color: gray;
+  color: white;
+}
+
+/* Details info //////////////////////////////////////////////////*/
+.details{
+  display: none;
+  margin: 20px auto;
+}
+
+.title_film_info{
+  width: 100%;
+  text-align: center;
+}
+
+.film_info{
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background: #FBF2E9;
+
+}
+
+.all_info{
+  width: 560px;
+  border-collapse: collapse;
+  font-size: 14pt;
+}
+
+td{padding: 10px 0px 10px 20px;}
+
+.name_info{
+  width: 120px;
+}
+
+.poster_large{
+  width: 300px;
+  height: 450px;
+}
