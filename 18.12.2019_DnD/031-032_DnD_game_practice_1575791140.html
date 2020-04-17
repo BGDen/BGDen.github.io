@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/gizetayigi/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="ru-UA">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Sotula Nick" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Step Dnipro HomeWork Web Course->JS" />
+	<title>DZ-JS-031-032</title>
+	<style>
+		body {
+			padding: 15px 20px;
+			font-family: sans-serif;
+		}
+		section { 
+			margin: 15px;
+			border-left: 15px solid #11ff22;
+			padding-left: 15px;
+		}
+
+		code {
+			font-size: 150%;
+            text-shadow: 1px 1px 5px dimgrey;
+		}
+
+		main {
+			width: 85%;
+			margin: 0 auto;
+		}
+
+		h1{
+				text-align: center;
+		}
+		a{
+			font-size: 110%;
+			text-decoration: none;
+		}
+
+		a:hover{
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<main>
+        <h1>Домашнее задание №031-032 - DnD - игра</h1>
+        <h2>Практика</h2>
+		<section>
+			<h3>Описание</h3>
+			<p></p>
+			<ul>
+				<li>Каждые 2-4(случайно) секунды происходит генерация нового html-элемента(<code>Печенька</code>) на экране в случайном месте(кроме центра экрана)</li>
+				<li>Элемент <code>Печенька</code> при генерации случайно получает один из трех внешних видов:
+					<ul>
+						<li>Желтый круг(<code>Солнце</code>) - 30%</li>
+						<li>Серый полукруг(<code>Луна</code>) - 60%</li>
+						<li>Синий ромб(<code>Звезда</code>) - 10%</li>
+					</ul>
+				</li>
+				<li>В центре экрана находится круглый объект размером 100*100(<code>Черная Дыра</code>)</li>
+				<li>С начала игры запускается таймер с отметки в 5 секунд</li>
+				<li>Каждый занесенный объект в Черную Дыру увеличивает время в таймере на 4 секунды</li>
+				<li>По окончанию таймера объекты перестают генерироваться и их нельзя больше переносить</li>
+				<li>Каждый объект при попадании в Черную Дыру удаляется и увеличивает количество очков:
+					<ul>
+						<li>Луна - 3 очка</li>
+						<li>Солнце - 7 очков</li>
+						<li>Звезда - 11 очков</li>
+					</ul>
+				</li>
+				<li>В черной дыре отображается время таймера и количество очков полученных игроком</li>
+				<li>Любая Печенька отображается на экране только 7 секунд. Если её не перенесли  в Черную Дыру, она удаляется</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Советы:</h3>
+			<p>Запаковывайте каждый новый элемент, его время жизни, метод для смерти, ссылку на печеньку в отдельный объект. Объекты заносите в массив.</p>
+		</section>
+		<h3>Формат работы</h3>
+		<ul>
+			<li>html, js, css файлы</li>
+		</ul>
+		<h3>Критерии оценивания</h3>
+		<ul>
+			<li>Соблюдение формата работы</li>
+		</ul>
+	</main>
+</body>
+</html>
