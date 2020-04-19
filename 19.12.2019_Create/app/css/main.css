@@ -1,0 +1,54 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: url('../img/линии.png') repeat center,
+              url('../img/точки.png')
+              no-repeat center center fixed;
+  background-size: contain, cover;
+
+  animation: bgAnim 120s linear infinite;
+}
+
+
+@keyframes bgAnim {
+  from {
+    background-position: 0px 0%, center center;
+  }
+  to {
+    background-position: -1024px 0%, center center;
+  }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+.container{
+  /* width: 20em; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: rgba(240, 255, 240, 0.445);
+  border: 1px solid black;
+}
+
+#p1, #p2{
+  font-size: 3em;
+}
+
+#p1{color: red; margin: 0 .7em 0 0;}
+
+#p2{color: green; margin: 0;}
+
+.text{text-align: center;}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
