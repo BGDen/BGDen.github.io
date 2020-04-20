@@ -1,0 +1,194 @@
+
+body, .container, .today, .title, .info, .future, .future> div, .top, .bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background: linear-gradient(0deg, rgba(255,0,215,1) 0%, rgba(108,251,237,1) 20%, rgba(108,251,237,1) 80%, rgba(255,0,215,1) 100%);
+  font-family:  "Apple Chancery", cursive;
+}
+
+
+.container{
+  width: 100%;
+}
+
+.top, .bottom{
+  width: 100%;
+  height: 18%;
+  justify-content: space-between;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.411);
+}
+
+.top> div:nth-of-type(1){
+  width: 150px;
+  height: 100px;
+  margin-left: 1.5em;
+  background: url('../app/img/снег.png') no-repeat 50%;
+  background-size: contain;
+}
+
+.top> div:nth-of-type(2){
+  width: 150px;
+  height: 100px;
+  margin-right: 1.5em;
+  background: url('../app/img/цветение.png') no-repeat 50%;
+  background-size: contain;
+}
+
+.bottom> div:nth-of-type(1){
+  width: 150px;
+  height: 100px;
+  margin-left: 1em;
+  background: url('../app/img/трава.png') no-repeat 50%;
+  background-size: contain;
+}
+
+.bottom> div:nth-of-type(3){
+  width: 150px;
+  height: 100px;
+  margin-right: 1.5em;
+  background: url('../app/img/листья.png') no-repeat 50%;
+  background-size: contain;
+}
+
+.bottom> div:nth-of-type(2){
+  width: 450px;
+  height: 150px;
+  margin-right: 1.5em;
+  background: url('../app/img/времена.png') no-repeat 50%;
+  background-size: contain;
+}
+
+
+.today{
+  width: 40em;
+  height: 220px;
+  margin-right: 1em;
+  padding: 1.5em 0;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(246,243,0,1) 0%, rgba(108,251,237,1) 50%, rgba(255,0,215,1) 100%);
+}
+
+.title{
+  width: 100%;
+  margin-bottom: 2em;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.title p{
+  padding: .1em .3em;
+  border-radius: .2em;
+  background: white;
+}
+
+.title p:nth-of-type(1){
+  color: white;
+  background: rgba(166, 0, 166, 0.637);
+}
+
+.title p:nth-of-type(2){
+  padding: 0 .3em;
+  border: 3px dotted black;
+}
+
+.info{
+  width: 100%;
+  justify-content: space-around;
+}
+
+.img{
+  margin-left: 3em;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 15px 8px #FF9840;
+}
+
+.temperature{
+  font-size: 2em;
+  line-height: 2em;
+  padding: 0 .5em;
+  color: white;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  font-weight: bold;
+  border-radius: .8em;
+  border: 6px double gray;
+  background: rgb(255, 189, 132);
+}
+
+.temperature> p{
+  margin: 0;
+}
+
+.other{
+  padding: .2em .5em;
+  color: #180773;
+  border: 1px solid black;
+  border-radius: .5em;
+  background-color: rgb(255, 255, 144);
+}
+
+.other p{
+  margin: 4px;
+}
+
+.future{
+  width: 40em;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(255,0,215,1) 0%, rgba(108,251,237,1) 50%, rgba(246,243,0,1) 100%);
+}
+
+.future div{
+  width: 20%;
+  padding: .1em 0;
+  flex-direction: column;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.future *> img{
+  border-radius: 50%;
+  background: rgb(135, 209, 255);
+}
+
+.day5{
+  border-right: 2px solid white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.day1{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cl1{
+  padding: 0 .5em;
+  margin-top: .2em;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: .2em;
+  /* background: white; */
+  text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px 0px 0 white, 0px 1px 0 white, -1px 0px 0 white, 0px -1px 0 white;
+}
+
+.day1 *, .day2 *, .day3 *, .day4 *, .day5 *{
+  margin: .6em;
+}
+
+img{box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);}
