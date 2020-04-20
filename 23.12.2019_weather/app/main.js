@@ -8,13 +8,13 @@ const dom = {
 
 
 function getWeatherToday() {
-fetch(`https://api.weatherstack.com/current?access_key=7dea5fc363b011454a6761505ec0092f&query=fetch:ip&units=m`)
+fetch(`http://api.weatherstack.com/current?access_key=7dea5fc363b011454a6761505ec0092f&query=fetch:ip&units=m`)
   .then(response => response.json())
   .then(result => renderToday(result));
 }
 
 function getWeatherFuture(lat, lon) {
-fetch(`https://api.openweathermap.org/data/2.5/forecast?appid=1674a1e8ed045c095ef95328eacb8f96&units=metric&lat=${lat}&lon=${lon}`)
+fetch(`http://api.openweathermap.org/data/2.5/forecast?appid=1674a1e8ed045c095ef95328eacb8f96&units=metric&lat=${lat}&lon=${lon}`)
   .then(response => response.json())
   .then(result => renderFuture(result));
 } 
