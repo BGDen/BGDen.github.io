@@ -1,0 +1,52 @@
+body, .cont, .spinners, .spinners *{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(204,255,253,1) 0%, rgba(255,251,115,1) 100%);
+}
+
+.cont{
+  position: absolute;
+  width: 40em;
+  height: 40em;
+  border-radius: 50%;
+  background: url('../img/helix.png') no-repeat 50%;
+  background-size: 100%;
+  transition: all 0.5s ease;
+  animation: rotate 5s linear infinite;
+  z-index: -5;
+}
+
+.spinners{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+.spinners *{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: .3em;
+  font-size: 3em;
+  border: 1px solid black;
+  background: white;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}
