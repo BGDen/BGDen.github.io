@@ -1,0 +1,70 @@
+body, .cont, .vs, .FvsO, .block-ti, .block-tex, .a1, .a2, .a3, .a4, .a5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Apple Chancery", cursive;
+}
+
+.cont{
+  padding: 1em .5em;
+}
+
+.block-q{
+  font-size: 1.2em;
+  align-self: flex-start;
+}
+
+.block-q *{
+  margin: .5em 0;
+}
+
+.t{
+  margin: 1em 0;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.q-1, .a1{
+  background: #81d9ea94;
+}
+
+.q-2, .a2{
+  background: #9da7e68c;
+}
+
+.q-3, .a3{
+  background: #b580e391;
+}
+
+.q-4, .a4{
+  background: #d24dde94;
+}
+
+.q-5, .a5{
+  background: #e800c593;
+}
+
+.q-1, .q-2, .q-3, .q-4, .q-5{
+  padding: .1em .5em;
+  border-radius: .3em;
+}
+
+.a1, .a2, .a3, .a4, .a5{
+  width: 97%;
+  margin: .2em 0;
+  padding: 0 1em;
+  font-size: 1.2em;
+  border-radius: 1em;
+  align-items: flex-start;
+}
+
+.a4> ul{
+  margin: 0;
+}
